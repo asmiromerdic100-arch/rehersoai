@@ -1,0 +1,36 @@
+{
+  "slug": "objection-send-me-an-email",
+  "title": "Objection: 'Just send me an email'",
+  "category": "objection",
+  "difficulty": "beginner",
+  "description": "The most common cold-call brush-off. Handle it without sounding pushy or giving up.",
+  "buyer_context": "You're 45 seconds into a cold call. The buyer is a Director of Sales at a mid-market company. He's been cordial but wants to end the call. He says: 'You know what, just send me an email and I'll take a look when I have time.'",
+  "user_goal": "Either (a) earn a proper 10-minute discovery conversation in the next week, OR (b) get a concrete reason why now isn't the right time. Don't just agree to send an email — that almost always goes nowhere.",
+  "challenge_prompt": "Buyer: 'You know what, just send me an email and I'll take a look when I have time.' How do you respond?",
+  "rubric": {
+    "ideal_behaviors": [
+      "Acknowledge the request warmly without immediately caving",
+      "Reframe: note that emails get buried, propose a specific short call instead",
+      "Offer a concrete time window ('15 minutes Thursday at 2 or Friday at 10?')",
+      "Tie the ask back to a specific value or insight — why it's worth 15 min",
+      "If they still push back, ask one revealing question instead of pitching harder"
+    ],
+    "common_mistakes": [
+      "Agreeing immediately: 'Sure, I'll send it over!' (call is dead)",
+      "Getting defensive or pushy",
+      "Vague next step: 'Let me follow up next week' (no specifics, no commitment)",
+      "Launching into pitch to 'change their mind'",
+      "Not asking anything that reveals priority or timing"
+    ],
+    "category_weights": {
+      "confidence": 0.15,
+      "clarity": 0.15,
+      "structure": 0.10,
+      "discovery": 0.10,
+      "objection_handling": 0.30,
+      "active_listening": 0.10,
+      "closing_readiness": 0.10
+    }
+  },
+  "skill_slugs": ["objection_handling", "confidence", "closing_readiness", "active_listening"]
+}

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * ─────────────────────────────────────────────────────────
+ * Design tokens
+ * Neutral, restrained palette. Swap these to re-skin the app.
+ * Primary = deep slate. Accent lives in --primary for now.
+ * ─────────────────────────────────────────────────────────
+ */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 25% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 25% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+
+    --primary: 222 47% 11%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 25% 11%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 222 25% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 60% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 222 47% 11%;
+
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+}
+
+/* Subtle scrollbar */
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}

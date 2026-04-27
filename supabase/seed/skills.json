@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "confidence",
+    "name": "Confidence",
+    "description": "Composure, assertive delivery, and conviction in what you're saying.",
+    "display_order": 1
+  },
+  {
+    "slug": "clarity",
+    "name": "Clarity",
+    "description": "Clear, concise language. No jargon soup, no rambling, no filler.",
+    "display_order": 2
+  },
+  {
+    "slug": "structure",
+    "name": "Structure",
+    "description": "A logical flow from open to hook to value to next step.",
+    "display_order": 3
+  },
+  {
+    "slug": "discovery",
+    "name": "Discovery",
+    "description": "Asking open-ended, revealing questions that uncover pain, process, and priority.",
+    "display_order": 4
+  },
+  {
+    "slug": "objection_handling",
+    "name": "Objection Handling",
+    "description": "Acknowledging, reframing, and resolving objections without getting defensive.",
+    "display_order": 5
+  },
+  {
+    "slug": "active_listening",
+    "name": "Active Listening",
+    "description": "Responding to what the buyer actually said, not what you wanted them to say.",
+    "display_order": 6
+  },
+  {
+    "slug": "closing_readiness",
+    "name": "Closing Readiness",
+    "description": "Asking for the next step clearly and without apology.",
+    "display_order": 7
+  }
+]

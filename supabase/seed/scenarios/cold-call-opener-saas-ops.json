@@ -1,0 +1,36 @@
+{
+  "slug": "cold-call-opener-saas-ops",
+  "title": "Cold Call Opener — SaaS Ops Manager",
+  "category": "cold_call",
+  "difficulty": "beginner",
+  "description": "Earn the right to continue a cold call in under 30 seconds.",
+  "buyer_context": "You're calling Sarah, Head of RevOps at a 200-person B2B SaaS company. She's already been pitched 5 times this week. She picks up on the third ring sounding slightly impatient.",
+  "user_goal": "Earn 2 minutes of her time by being specific, relevant, and respectful of her time — not by pitching.",
+  "challenge_prompt": "Sarah picks up: 'Hello, this is Sarah.' You have ~30 seconds. Go.",
+  "rubric": {
+    "ideal_behaviors": [
+      "State your name and company clearly in the first 5 seconds",
+      "Acknowledge this is a cold call honestly — builds trust",
+      "Give a specific, relevant reason for calling tied to her role or company",
+      "Ask permission to continue OR offer a crisp value hook",
+      "Keep the total opener under 30 seconds"
+    ],
+    "common_mistakes": [
+      "Asking 'How are you today?' (burns trust immediately)",
+      "Launching into a pitch before earning permission",
+      "Vague value prop ('we help companies grow')",
+      "Over-apologizing or over-explaining",
+      "Speaking too fast from nerves — hard to follow"
+    ],
+    "category_weights": {
+      "confidence": 0.20,
+      "clarity": 0.25,
+      "structure": 0.20,
+      "discovery": 0.05,
+      "objection_handling": 0.00,
+      "active_listening": 0.10,
+      "closing_readiness": 0.20
+    }
+  },
+  "skill_slugs": ["confidence", "clarity", "structure", "closing_readiness"]
+}
