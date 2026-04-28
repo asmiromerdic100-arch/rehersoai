@@ -6,7 +6,7 @@ import type { EvaluationInput, EvaluationResult, Evaluator } from './index';
 import { buildEvaluatorPrompt } from './prompt';
 import { EvaluatorOutputSchema, filterValidAnnotations } from './schema';
 
-const MODEL = 'gemini-2.0-flash';
+const MODEL = 'gemini-2.5-flash';
 
 /**
  * Gemini-backed evaluator. Free tier is generous (~1500 req/day).
