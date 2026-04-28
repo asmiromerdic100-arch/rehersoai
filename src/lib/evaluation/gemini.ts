@@ -9,9 +9,9 @@ import { EvaluatorOutputSchema, filterValidAnnotations } from './schema';
 const MODEL = 'gemini-2.5-flash';
 
 /**
- * Gemini-backed evaluator. Free tier is generous (~1500 req/day).
+ * Gemini-backed evaluator. Free tier ~250 req/day on 2.5 Flash.
  * Uses JSON mode for structured output; still validates with Zod because
- * JSON mode doesn't guarantee schema conformance.
+ * JSON mode does not guarantee schema conformance.
  */
 export class GeminiEvaluator implements Evaluator {
   async evaluate(input: EvaluationInput): Promise<EvaluationResult> {
@@ -23,7 +23,7 @@ export class GeminiEvaluator implements Evaluator {
       model: MODEL,
       generationConfig: {
         responseMimeType: 'application/json',
-        temperature: 0.4, // mild creativity, heavy on consistency
+        temperature: 0.4,
         maxOutputTokens: 2048,
       },
     });
@@ -71,7 +71,6 @@ async function runWithRetry<T>(fn: () => Promise<T>, retries = 1): Promise<T> {
 }
 
 function safeJsonParse(raw: string): unknown {
-  // Strip accidental markdown fences if the model inserted them.
   const cleaned = raw
     .replace(/^```(?:json)?\s*/i, '')
     .replace(/\s*```\s*$/, '')
@@ -79,7 +78,6 @@ function safeJsonParse(raw: string): unknown {
   try {
     return JSON.parse(cleaned);
   } catch {
-    // Try to find the first { ... } block.
     const start = cleaned.indexOf('{');
     const end = cleaned.lastIndexOf('}');
     if (start >= 0 && end > start) {
@@ -88,4 +86,3 @@ function safeJsonParse(raw: string): unknown {
     throw new Error('Evaluator output was not valid JSON');
   }
 }
-
