@@ -42,7 +42,7 @@ export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const isAuthRoute = path === '/login';
   const isOnboarding = path === '/onboarding';
-  const isPublic = isAuthRoute || path.startsWith('/_next') || path.startsWith('/api/auth');
+  const isPublic = isAuthRoute || path.startsWith('/_next') || path.startsWith('/api/auth') || path.startsWith('/auth/callback');
   const isRoot = path === '/';
 
   // Not signed in, trying to hit an app route → /login

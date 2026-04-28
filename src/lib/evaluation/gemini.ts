@@ -1,4 +1,4 @@
-import 'server-only';
+﻿import 'server-only';
 
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
@@ -88,3 +88,4 @@ function safeJsonParse(raw: string): unknown {
     throw new Error('Evaluator output was not valid JSON');
   }
 }
+
