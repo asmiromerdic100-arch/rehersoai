@@ -1,0 +1,43 @@
+{
+  "slug": "closing-ai-firm-partnership",
+  "title": "Closing — AI Firm Partnership (Price Negotiation)",
+  "category": "closing",
+  "difficulty": "advanced",
+  "description": "Final-stage closing call with an AI firm. They want the product but pushed back hard on price and hinted at a competitor. Defend value, propose a creative deal structure, secure a verbal commitment.",
+  "buyer_context": "You're closing a partnership deal with Marcus, VP of Engineering at a 60-person AI firm in London. They've been through 4 calls — kickoff, technical demo, security review, executive readout. They love the product. The proposed contract is €48,000/year for 50 seats with a 2-year term. Marcus has decision authority but answers to a CFO who is squeezing every line item this quarter. He's also been talking to a cheaper competitor who is offering a similar tool at €30K/year but with a much weaker feature set. This is the final pricing conversation — close it today or lose 30 days to procurement back-and-forth.",
+  "user_goal": "Defend the €48K price OR restructure the deal creatively so both sides win. Get a verbal commitment to sign by end of week. Do NOT discount more than 10% off list — anything more sets a bad precedent and signals desperation. Acceptable creative levers: longer term for discount, phased rollout, payment terms, success-based pricing, additional seats at marginal cost.",
+  "challenge_prompt": "Marcus (warm but firm): 'Look, we love the product — the team is sold. But our CFO came back and said €48K is more than we budgeted. We've also been talking to [Competitor X] who quoted us €30K for what looks like a similar tool. I want to make this work, but I need you to come down to €35K, or I'm going to have a hard time getting this approved this quarter. What can you do?'",
+  "rubric": {
+    "ideal_behaviors": [
+      "Acknowledge the budget pressure without panicking or immediately discounting",
+      "Reframe the conversation around value and outcomes, not price — anchor on the quantified ROI from earlier calls",
+      "Differentiate from the cheaper competitor on a specific, defensible dimension (not vague 'better quality')",
+      "Propose a creative deal structure that protects price but adds value: longer term, phased payment, success milestones, expanded seats, earlier renewal lock",
+      "Ask a discovery question to understand the CFO's actual constraint — is it total budget, monthly cash flow, or quarter timing?",
+      "Hold a confident, specific price floor (e.g., '€44K is the lowest we can go and here's why') instead of negotiating against yourself",
+      "Tie the close to a concrete next step with a deadline ('If we agree on €44K with quarterly payments, can we have signatures by Friday?')",
+      "Be willing to walk away from a deal that destroys margin — confidence to say no protects the close"
+    ],
+    "common_mistakes": [
+      "Caving to €35K immediately or offering a >15% discount without getting anything in return",
+      "Trashing the competitor instead of positioning against them on substance",
+      "Vague value defense ('we're just better') without naming specific differentiators",
+      "Pitching features they've already seen in 4 prior calls — they know the product, this is about commercial structure",
+      "Offering 'let me check with my manager' — signals you're not the decision-maker, kills momentum",
+      "Splitting the difference at €40K to 'meet in the middle' without a justifying structure",
+      "Missing the chance to ask discovery questions about the CFO's real constraint",
+      "Vague next step like 'I'll get back to you' instead of locking a specific time and outcome",
+      "Letting the negotiation become adversarial — Marcus is your ally inside the company, not your opponent"
+    ],
+    "category_weights": {
+      "confidence": 0.15,
+      "clarity": 0.10,
+      "structure": 0.15,
+      "discovery": 0.10,
+      "objection_handling": 0.20,
+      "active_listening": 0.05,
+      "closing_readiness": 0.25
+    }
+  },
+  "skill_slugs": ["closing_readiness", "objection_handling", "structure", "confidence", "discovery"]
+}
